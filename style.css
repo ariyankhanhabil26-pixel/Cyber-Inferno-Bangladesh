@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #050505;
+    color: white;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a0a0a;
+    border-bottom: 2px solid red;
+    box-shadow: 0 0 15px red;
+}
+
+.logo h2 {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+
+/* Menu */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+
+/* Dropdown */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #111;
+    min-width: 220px;
+    border: 1px solid red;
+    box-shadow: 0 0 15px red;
+    z-index: 10;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+.dropdown-content li a {
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: red;
+    text-shadow: 0 0 15px red;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+    }
+
+}

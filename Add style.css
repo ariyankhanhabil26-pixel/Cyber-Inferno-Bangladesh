@@ -121,3 +121,13 @@ nav ul li a:hover {
     }
 
 }
+
+.logo p {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.logo h2 {
+    letter-spacing: 1px;
+}
